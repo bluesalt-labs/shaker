@@ -10,7 +10,18 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+$app->get('foo', function () {
+    return 'Hello World';
+});
 
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+
+/*
+Route::get('/', function()
+{
+    return view('home');
+});
+*/

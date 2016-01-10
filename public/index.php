@@ -25,4 +25,11 @@ $app = require __DIR__.'/../bootstrap/app.php';
 |
 */
 
-$app->run();
+try {
+  $request = Illuminate\Http\Request::capture();
+  $app->run($request);
+} catch(\Exception $e) {
+    echo "<pre>";
+    echo $e;
+    echo "</pre>";
+}
