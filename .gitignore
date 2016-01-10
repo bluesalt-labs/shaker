@@ -1,2 +1,4 @@
 /vendor/
-.remote-sync.json
+/.remote-sync.json
+/.env
+/composer.lock
