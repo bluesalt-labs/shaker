@@ -1,5 +1,5 @@
 {
-    "name": "bluesaltlabs/shaker",
+    "name": "bluesalt-labs/shaker",
     "description": "A modular server management web application",
     "require": {
         "php": ">=5.5.9",
