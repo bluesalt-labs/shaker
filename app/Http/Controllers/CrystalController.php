@@ -1,4 +1,5 @@
-<?php // this is not in the correct directory. Figure out where this should go
+<?php defined('SYSPATH') or die('No direct access allowed.');
+// this is not in the correct directory? Figure out where this should go
 
 namespace App\Http\Controllers;
 

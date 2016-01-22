@@ -1,0 +1,13 @@
+{
+    "name": "bluesalt-labs/example-crystal",
+    "description": "This is an example Crystal (aka plugin) for the Shaker application.",
+    "version": "0.1",
+    "require": {},
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Luke Sontrop",
+            "email": "luke@bluesaltlabs.com"
+        }
+    ]
+}
