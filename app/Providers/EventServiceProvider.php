@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace shaker\Providers;
 
-use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -12,8 +13,21 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        'shaker\Events\SomeEvent' => [
+            'shaker\Listeners\EventListener',
         ],
     ];
+
+    /**
+     * Register any other events for your application.
+     *
+     * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+     * @return void
+     */
+    public function boot(DispatcherContract $events)
+    {
+        parent::boot($events);
+
+        //
+    }
 }
